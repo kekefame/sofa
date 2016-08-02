@@ -1,0 +1,409 @@
+/*把网页分成12个栅格   做布局时指定每一块内容在不同的分辨率下所占的栅格数 就可以完成响应式布局的效果*/
+*{
+    box-sizing:border-box;
+    padding:0;margin:0;
+    text-decoration: none;
+}
+.cols-xs-1, .cols-sm-1, .cols-md-1, .cols-lg-1, .cols-xs-2, .cols-sm-2, .cols-md-2, .cols-lg-2, .cols-xs-3, .cols-sm-3, .cols-md-3, .cols-lg-3, .cols-xs-4, .cols-sm-4, .cols-md-4, .cols-lg-4, .cols-xs-5, .cols-sm-5, .cols-md-5, .cols-lg-5, .cols-xs-6, .cols-sm-6, .cols-md-6, .cols-lg-6, .cols-xs-7, .cols-sm-7, .cols-md-7, .cols-lg-7, .cols-xs-8, .cols-sm-8, .cols-md-8, .cols-lg-8, .cols-xs-9, .cols-sm-9, .cols-md-9, .cols-lg-9, .cols-xs-10, .cols-sm-10, .cols-md-10, .cols-lg-10, .cols-xs-11, .cols-sm-11, .cols-md-11, .cols-lg-11, .cols-xs-12, .cols-sm-12, .cols-md-12, .cols-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container{
+    height:auto;
+    margin:0 auto;
+}
+.container-fluid{
+    width:100%;
+}
+.container:after,.container-fluid:after{
+    content:"";
+    display:block;
+    clear: both;
+}
+.row{
+    width:100%;height:100%;
+    margin-left:-15px;
+    margin-right:-15px;
+}
+.container{
+    width:100%;
+}
+.cols-xs-1{
+    width:8.333333%;float:left;
+    display:block;
+}
+.cols-xs-2{
+    width:16.66667%;float:left;
+    display:block;
+}
+.cols-xs-3{
+    width:25%;float:left;
+    display:block;
+}
+.cols-xs-4{
+    width:33.333333%;float:left;
+    display:block;
+}
+.cols-xs-5{
+    width:41.66667%;float:left;
+    display:block;
+}
+.cols-xs-6{
+    width:50%;float:left;
+    display:block;
+}
+.cols-xs-7{
+    width:58.3333%;float:left;
+    display:block;
+}
+.cols-xs-8{
+    width:66.666667%;float:left;
+    display:block;
+}
+.cols-xs-9{
+    width:75%;float:left;
+    display:block;
+}
+.cols-xs-10{
+    width:83.33333%;float:left;
+    display:block;
+}
+.cols-xs-11{
+    width:91.66667%;float:left;
+    display:block;
+}
+.cols-xs-12{
+    width:100%;float:left;
+    display:block;
+}
+.cols-xs-hid{
+    display:none;
+}
+@media screen and (max-width:750px){
+    .top-bar-logo {
+    float: none;
+    margin: 0 auto 10px;
+    }
+    .top-bar-search {
+    float: left;
+    margin: 0;
+    }
+    .app-block-element {
+    margin: 0 auto 20px;
+    width: 130px;
+}
+.app-block-icon {
+    width: 100px;
+    height: 100px;
+}
+.index-banner-text {
+    text-align: center;
+    }
+.index-articles-right {
+    margin-left: 0;
+    }
+.index-articles-right  .index-articles-list {
+    text-align: center;
+}
+    .container{
+        width:100%;
+    }
+    .rr{
+        text-align:center;
+    }
+    .footer-maps-block {
+    width: 33%;
+    height: 170px;
+}
+    .cols-sml-1{
+        width:8.333333%;float:left;
+        display:block;
+    }
+    .cols-sml-2{
+        width:16.66667%;float:left;
+        display:block;
+    }
+    .cols-sml-3{
+        width:25%;float:left;
+        display:block;
+    }
+    .cols-sml-4{
+        width:33.333333%;float:left;
+        display:block;
+    }
+    .cols-sml-5{
+        width:41.66667%;float:left;
+        display:block;
+    }
+    .cols-sml-6{
+        width:50%;float:left;
+        display:block;
+    }
+    .cols-sml-7{
+        width:58.3333%;float:left;
+        display:block;
+    }
+    .cols-sml-8{
+        width:66.666667%;float:left;
+        display:block;
+    }
+   .cols-sml-9{
+        width:75%;float:left;
+        display:block;
+    }
+    .cols-sml-10{
+        width:83.33333%;float:left;
+        display:block;
+    }
+    .cols-sml-11{
+        width:91.66667%;float:left;
+        display:block;
+    }
+   .cols-sml-12{
+        width:100%;float:left;
+        display:block;
+    }
+    .cols-sml-hid{
+        display:none;
+    }
+    .cols-sml-hid1{
+        display:block;
+    }
+}
+@media screen and (min-width:768px){
+    .container{
+        width:750px;
+    }
+     .item-image {
+    width: 155px;
+    height: 112px;
+    }
+    .navbar-nav > li > a {
+        padding: 15px 8px;
+    }
+     .index-banner-text {
+    text-align: center;
+    }
+    .app-block-icon {
+    width: 128px;
+    height: 128px;
+   }
+    .item-image {
+    width: 140px;
+    height: 101px;
+}
+    .cols-sm-1{
+        width:8.333333%;float:left;
+        display:block;
+    }
+    .cols-sm-2{
+        width:16.66667%;float:left;
+        display:block;
+    }
+    .cols-sm-3{
+        width:25%;float:left;
+        display:block;
+    }
+    .cols-sm-4{
+        width:33.333333%;float:left;
+        display:block;
+    }
+    .cols-sm-5{
+        width:41.66667%;float:left;
+        display:block;
+    }
+    .cols-sm-6{
+        width:50%;float:left;
+        display:block;
+    }
+    .cols-sm-7{
+        width:58.3333%;float:left;
+        display:block;
+    }
+    .cols-sm-8{
+        width:66.666667%;float:left;
+        display:block;
+    }
+   .cols-sm-9{
+        width:75%;float:left;
+        display:block;
+    }
+    .cols-sm-10{
+        width:83.33333%;float:left;
+        display:block;
+    }
+    .cols-sm-11{
+        width:91.66667%;float:left;
+        display:block;
+    }
+   .cols-sm-12{
+        width:100%;float:left;
+        display:block;
+    }
+    .cols-sm-hid{
+        display:none;
+    }
+    .cols-sm-hid1{
+        display:block;
+    }
+}
+@media screen and (min-width:992px){
+    .container{
+        width:970px;
+    }
+    .index-articles-right {
+        margin-left: 50%;
+    }
+    .navbar-nav > li > a {
+        padding: 15px 20px;
+    }
+     #imgs {
+    width: 449px;
+    height: 280px;
+}
+.banner-image-mask {
+    width:455px;
+    height: 318px;
+    background-color: #000;
+}
+ .index-banner-text {
+    text-align:left;
+    }
+    .app-block-icon {
+    width: 100px;
+    height: 100px;
+}
+li.item-model-2 {
+    margin-right: 2px;
+    margin-bottom: 37px;
+}
+.item-image {
+    width: 135px;
+    height: 101px;
+}
+    .cols-md-1{
+        width:8.333333%;float:left;
+        display:block;
+    }
+    .cols-md-2{
+        width:16.66667%;float:left;
+        display:block;
+    }
+    .cols-md-3{
+        width:25%;float:left;
+        display:block;
+    }
+   .cols-md-4{
+        width:33.333333%;float:left;
+        display:block;
+    }
+   .cols-md-5{
+        width:41.66667%;float:left;
+        display:block;
+    }
+    .cols-md-6{
+        width:50%;float:left;
+        display:block;
+    }
+   .cols-md-7{
+        width:58.3333%;float:left;
+        display:block;
+    }
+    .cols-md-8{
+        width:66.666667%;float:left;
+        display:block;
+    }
+    .cols-md-9{
+        width:75%;float:left;
+        display:block;
+    }
+    .cols-md-10{
+        width:83.33333%;float:left;
+        display:block;
+    }
+    .cols-md-11{
+        width:91.66667%;float:left;
+        display:block;
+    }
+   .cols-md-12{
+        width:100%;float:left;
+        display:block;
+    }
+    .cols-md-hid{
+        display:none;
+    }
+}
+@media screen and (min-width:1200px){
+    .container{
+        width:1170px;
+    }
+    .navbar-nav > li > a {
+        padding: 15px 30px;
+    }
+     #imgs {
+    width: 495px;
+    height: 280px;
+}
+.banner-image-mask {
+    width:503px;
+    height: 318px;
+    background-color: #000;
+}
+.app-block-icon {
+    width: 128px;
+    height: 128px;
+}
+    .cols-lg-1{
+        width:8.333333%;float:left;
+        display:block;
+    }
+    .cols-lg-2{
+        width:16.66667%;float:left;
+        display:block;
+    }
+    .cols-lg-3{
+        width:25%;float:left;
+        display:block;
+    }
+    .cols-lg-4{
+        width:33.333333%;float:left;
+        display:block;
+    }
+    .cols-lg-5{
+        width:41.66667%;float:left;
+        display:block;
+    }
+   .cols-lg-6{
+        width:50%;float:left;
+        display:block;
+    }
+   .cols-lg-7{
+        width:58.3333%;float:left;
+        display:block;
+    }
+    .cols-lg-8{
+        width:66.666667%;float:left;
+        display:block;
+    }
+    .cols-lg-9{
+        width:75%;float:left;
+        display:block;
+    }
+    .cols-lg-10{
+        width:83.33333%;float:left;
+        display:block;
+    }
+    .cols-lg-11{
+        width:91.66667%;float:left;
+        display:block;
+    }
+    .cols-lg-12{
+        width:100%;float:left;
+        display:block;
+    }
+    .cols-lg-hid{
+        display:none;
+    }
+}
